@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"compass_cursor_y",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"compass_cursor_y",
+  "parent":{
+    "name":"Cursor",
+    "path":"folders/Compass/Cursor.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

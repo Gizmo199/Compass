@@ -1,0 +1,1 @@
+info = "FOCUS OBJECT : " + object_get_name(compass_object_get());

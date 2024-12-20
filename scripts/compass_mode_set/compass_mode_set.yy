@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"compass_mode_set",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"compass_mode_set",
+  "parent":{
+    "name":"Modes",
+    "path":"folders/Compass/Modes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

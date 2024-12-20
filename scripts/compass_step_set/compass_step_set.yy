@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"compass_step_set",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"compass_step_set",
+  "parent":{
+    "name":"General",
+    "path":"folders/Compass/General.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

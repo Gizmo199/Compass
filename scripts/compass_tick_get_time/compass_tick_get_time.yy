@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"compass_tick_get_time",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"compass_tick_get_time",
+  "parent":{
+    "name":"General",
+    "path":"folders/Compass/General.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,1 @@
+draw_sprite(sp_cursor, 0, compass_cursor_x(), compass_cursor_y());

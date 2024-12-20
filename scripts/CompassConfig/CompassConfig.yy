@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"CompassConfig",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CompassConfig",
+  "parent":{
+    "name":"Compass",
+    "path":"folders/Compass.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

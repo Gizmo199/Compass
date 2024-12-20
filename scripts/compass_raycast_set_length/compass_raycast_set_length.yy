@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"compass_raycast_set_length",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"compass_raycast_set_length",
+  "parent":{
+    "name":"General",
+    "path":"folders/Compass/General.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
