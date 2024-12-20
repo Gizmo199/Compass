@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"compass_raycast_set_length",
   "parent":{
-    "name":"General",
-    "path":"folders/Compass/General.yy",
+    "name":"Targeting",
+    "path":"folders/Compass/Targeting.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

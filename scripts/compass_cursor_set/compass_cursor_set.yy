@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"compass_attract_get",
+  "%Name":"compass_cursor_set",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"compass_attract_get",
+  "name":"compass_cursor_set",
   "parent":{
-    "name":"Targeting",
-    "path":"folders/Compass/Targeting.yy",
+    "name":"Cursor",
+    "path":"folders/Compass/Cursor.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

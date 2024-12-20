@@ -21,8 +21,7 @@ function compass_object_set(_object){
 		{
 			if ( instance_exists(__targ) )
 			{
-				__curs.x = __targ.x;
-				__curs.y = __targ.y;
+				compass_target_set(__targ);
 			}
 			else
 			{

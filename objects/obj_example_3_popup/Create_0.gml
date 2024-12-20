@@ -30,3 +30,6 @@ button =
 		image_yscale : 4
 	})
 ];
+
+// Set the cursor to jump to our first button target instead of nearest button
+compass_target_set(button[0]);
