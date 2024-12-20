@@ -1,5 +1,6 @@
 // Inherit the parent event
 event_inherited();
+window_set_cursor(cr_arrow);
 
 title= "Object targets!";
 text+= "Creating things like popups are a breeze! Using 'compass_object_set()' we can define specific ";

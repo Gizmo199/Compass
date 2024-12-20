@@ -9,9 +9,7 @@ compass_attract_set(0.2);
 
 // Info
 title= "Free movement"
-text+= "You may have noticed in the last example that the mouse was auto hovering over buttons even ";
-text+= "Though the mouse was not within the bounds of the object! ";
-text+= "This is a simple fix! We can set Compasses cursor to be 'free' moving by simply using ";
+text+= "We can set Compasses cursor to be 'free' moving by simply using ";
 text+= "compass_cursor_free_enable()! This will make both keyboard & gamepads cursors free as well ";
 text+= "We can also alter the 'step size' for compass, which dictates how many pixels ";
 text+= "the cursor moves per frame or how far the raycast checks for objects per iteration! ";
