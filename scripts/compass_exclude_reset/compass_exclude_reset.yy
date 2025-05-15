@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"compass_exclude_reset",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"compass_exclude_reset",
+  "parent":{
+    "name":"Targeting",
+    "path":"folders/Compass/Targeting.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

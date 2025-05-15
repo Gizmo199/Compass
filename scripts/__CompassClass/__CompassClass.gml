@@ -3,7 +3,7 @@ function __CompassClass() constructor {
 	__info = 
 	{
 		creator	: "Gizmo199",
-		version	: "1.0.0"
+		version	: "1.1.0"
 	}
 		
 	#macro compass_mode_mouse		0
@@ -25,8 +25,24 @@ function __CompassClass() constructor {
 	__stored	= {};
 	__invert	= { x : 1, y : 1 }
 	__attract	= COMPASS_DEFAULT_ATTRACTION;
+	__exclude	= [];
 		
 	// Raycasting
+	static __GetNearestSorted = function(_x, _y){
+		var _excl = __exclude;
+		var _list = [];
+		with ( __elem )
+		{
+			if ( array_contains(_excl, id) ) continue;
+			array_push(_list, id);
+		}
+		array_sort(_list, method({ x : _x, y : _y }, function(a, b){
+			var _d0 = point_distance(x, y, a.x, a.y);
+			var _d1 = point_distance(x, y, b.x, b.y);
+			return ( _d0 - _d1 );
+		}));
+		return _list[0];
+	}
 	static __RaycastUpdate = function(_x, _y){
 		
 		// Invert if needed
@@ -39,7 +55,7 @@ function __CompassClass() constructor {
 			// Move cursor
 			__curs.x += _x * __step;
 			__curs.y += _y * __step;
-			__targ = instance_nearest(__curs.x, __curs.y, __elem);
+			__targ = __GetNearestSorted(__curs.x, __curs.y, __elem);
 			
 			// Attract cursor to position if set
 			if ( __attract > 0 && point_distance(0, 0, _x, _y) <= 0 )
@@ -68,7 +84,7 @@ function __CompassClass() constructor {
 		var _dir = point_direction(0, 0, _x, _y);
 		while( _ray < __raylen )
 		{
-			var _element = instance_nearest(__curs.x + dcos(_dir) * _ray, __curs.y - dsin(_dir) * _ray, __elem);
+			var _element = __GetNearestSorted(__curs.x + dcos(_dir) * _ray, __curs.y - dsin(_dir) * _ray);
 			if( _element != __targ )
 			{
 				__targ  = _element;
@@ -77,7 +93,6 @@ function __CompassClass() constructor {
 			// Increase ray size
 			_ray += __step;
 		}
-		
 	}
 	
 	// Mode handling
@@ -127,7 +142,7 @@ function __CompassClass() constructor {
 		__mouse.y = __curs.y;
 		
 		// Set the index to undefined or the element
-		__targ = instance_nearest(__curs.x, __curs.y, __elem);
+		__targ = __GetNearestSorted(__curs.x, __curs.y, __elem);
 		if ( __targ == noone ) __targ = undefined;
 			
 	}
