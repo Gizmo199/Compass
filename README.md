@@ -9,7 +9,7 @@ To start you can simply use the various `compass_*` functions and the system wil
 This function sets *Compass* to know what objects it should search and select, for both mouse input as well as 'directional' inputs. 
 
 ## Examples
-You can find 3 examples in the project files above showcasing various modes and ways to use *Compass*
+You can find 4 examples in the project files above showcasing various modes and ways to use *Compass*
 
 
 https://github.com/user-attachments/assets/4b38b363-ab3e-4b97-be0a-86c7f68580bc
